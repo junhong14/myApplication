@@ -1,0 +1,39 @@
+<!-- Login Form -->
+<head>
+</head>
+<body>
+  <div class="container">
+    <!-- Form Panel-->
+    <h1>Create Account</h1>
+    <div id="formContent" class="formPanel">
+      <!-- Login Form -->
+      <form [formGroup]="loginForm">
+        <div class="form-group">
+          <input type="text" class="form-control" id="username" formControlName="username" placeholder="username">
+        </div>
+        <br>
+        <div class="form-group">
+          <input type="password" class="form-control" id="password" formControlName="password" placeholder="password">
+        </div>
+        <br>
+        <div class="form-group">
+          <input type="text" class="form-control" id="firstName" formControlName="firstName" placeholder="firstName">
+        </div>
+        <br>
+        <div class="form-group">
+          <input type="text" class="form-control" id="lastName" formControlName="lastName" placeholder="lastName">
+        </div>
+        <br>
+        <div class="form-group">
+          <input type="text" class="form-control" id="dob" formControlName="dob" placeholder="YYYY-MM-DD">
+        </div>
+        <br>
+        <button type ="button" (click)="createAccount()">Create</button>
+      </form>
+    </div>
+    <!-- Image Panel-->
+    <div id="sidePanel" class="imgPanel">
+      <img [src]="imgSrc" class="img">
+    </div>
+  </div>
+</body>

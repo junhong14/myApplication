@@ -1,0 +1,3 @@
+{
+    "createAccountURL": "http://localhost:3000/account/createAccount"
+}
